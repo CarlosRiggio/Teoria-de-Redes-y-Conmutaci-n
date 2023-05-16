@@ -8,3 +8,6 @@ subprocess.run(["python3", "ejecutador.py"])
 
 # Ejecutar conversor.py
 subprocess.run(["python3", "conversor.py"])
+
+# Ejecutar csv_total.py
+subprocess.run(["python3", "generado_csv_total.py"])
