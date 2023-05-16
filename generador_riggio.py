@@ -1,5 +1,5 @@
 def modificar_cfg(valor, nombre_archivo):
-    with open('r-0.8.cfg', 'r') as archivo:
+    with open('r-0.80.cfg', 'r') as archivo:
         lineas = archivo.readlines()
 
     for i in range(len(lineas)):
@@ -13,7 +13,7 @@ def modificar_cfg(valor, nombre_archivo):
 
 
 tabla = {
-    0.8: 10,
+    0.80: 10,
     0.84: 9.523809524,
     0.88: 9.090909091,
     0.92: 8.695652174,
@@ -32,5 +32,5 @@ tabla = {
 }
 
 for r, m in tabla.items():
-    nombre_archivo = f"r-{r}.cfg"
+    nombre_archivo = f"r-{r:.2f}.cfg"
     modificar_cfg(m, nombre_archivo)
